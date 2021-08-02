@@ -304,6 +304,10 @@ font-size: 0.8em;
     padding: 0;
 }
 
+.formulario input{
+    padding: 0.4em 0 0.4em;
+}
+
 .formulario textarea{
     height: 10em;
     resize: none;
