@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         var num1, num2, num3
 
         num1 = prompt('Ingrese primer numero:')
@@ -32,7 +32,19 @@
                 document.write('El tercer numero (' + num3, ') es el mas grande')
             }
         }
+    </script> -->
+
+    <script>
+        var numeros = [4, 87, 60, 44, 59, 4, 61, 16];
+
+        var mayor = 0;
+        for (var i = 0; i < numeros.length; i++) {
+            if (numeros[i] > mayor) { mayor = numeros[i] }
+        }
+
+        document.write('El mayor de ' + numeros + ' es ' + mayor)
     </script>
+    <!-- con las dos opciones logro el mismo resultado pero la segunda es mas eficiente -->
 </body>
 
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Cuadrados</title>
+</head>
+
+<body>
+    <button id="cuadrado1">Click Me</button>
+    <button id="cuadrado2">Click Me</button>
+    <button id="cuadrado3">Click Me</button>
+
+    <script>
+        var cuadrado1 = document.getElementById('cuadrado1');
+        var cuadrado2 = document.getElementById('cuadrado2');
+        var cuadrado3 = document.getElementById('cuadrado3');
+
+        var body = document.querySelector("body");
+
+        cuadrado1.addEventListener('click', function () {
+            body.classList.add('naranja')
+            body.classList.remove('verde', 'amarillo')
+        })
+
+        cuadrado2.addEventListener('click', function () {
+            body.classList.add('verde')
+            body.classList.remove('naranja', 'amarillo')
+        })
+
+        cuadrado3.addEventListener('click', function () {
+            body.classList.add('amarillo')
+            body.classList.remove('verde', 'naranja')
+        })
+
+
+    </script>
+</body>
+
+</html>
